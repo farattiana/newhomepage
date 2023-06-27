@@ -1,0 +1,116 @@
+.navbar{
+    position: relative;
+    width: 100%;
+    height: 54px;
+    padding-block: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index:1;
+}
+
+.links-container{
+    position: relative;
+    width: max-content;
+}
+ 
+#burger-menu {
+    z-index: 99;
+}
+
+.links-container .link-item{
+    position:relative ;
+    font-size: 16px;
+    padding-right: 32px;
+    cursor: pointer;
+    transition: all .3s;
+    color: var(--DarkGrayishBlue);
+    text-decoration: none;
+} 
+ 
+.links-container .link-item:hover{
+    color: var(--softRed);
+}
+
+#burger-menu{
+    display: none;
+}
+
+.mobile-links-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    z-index: 999;
+    transition: transform .3s;
+    background-color: var(--white);
+}
+
+.hide {
+    left:100%;
+}
+
+.show {
+    display: block;
+}
+
+
+@media screen and (max-width: 730px) {
+    #logo{
+        width: 35px;
+        position: absolute;
+        left: 0;
+    }
+
+    .links-container{
+        position: fixed;
+        left: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #burger-menu{
+        display: inherit;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 4%;
+        right: 8%;
+    }
+
+    #burger-close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .mobile-links {
+        position: relative;
+        z-index: 500;
+        /* width: 100%; */
+        background-color: var(--white);
+        height: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        padding-left: 5%;
+        margin-top: 6%;
+    }
+
+    .mobile-link-item{
+        font-size: 26px;
+        margin-block:20px;
+        color: var(--VeryDarkBlue);
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,46 @@
+@import url(./navbar.css);
+@import url(./homepage.css);
+@import url(./load.css);
+ 
+@font-face {
+    font-family: Intervariable;
+    src: url(../../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: bold;
+    src: url(../../assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: extrabold;
+    src: url(../../assets/fonts/static/Inter-ExtraBold.ttf);
+}
+
+*::before,
+*::after,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: Intervariable;
+    /* height: 100vh; */
+    padding: 3%;
+}
+
+:root{
+    --white:hsl(36, 100%, 99%);
+    --GrayishBlue: hsl(233, 8%, 79%);
+    --DarkGrayishBlue: hsl(236, 13%, 42%);
+    --VeryDarkBlue: hsl(240, 100%, 5%);
+    --softOrange: hsl(35, 77%, 62%);
+    --softRed: hsl(5, 85%, 63%)
+}
+
+p{
+    font-size: 15px;
+}
+
